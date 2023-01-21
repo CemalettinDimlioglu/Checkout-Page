@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5c7edfd842.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <h1 class="checkoutTitle">Checkout Page</h1>
+    <main>
+        <!-- <form action="">
+            <div class="contactInformation">
+                <h4>Contact Information</h4>
+                <div class="contactAddress">
+                    <label for="email">Email</label>
+                    <div class="inputField">
+
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" name="email" id="email">
+                    </div>
+                </div>
+                <div class="contactAddress">
+                    <label for="phone">Phone</label>
+                    <div class="inputField">
+
+                        <i class="fas fa-phone"></i>
+                        <input type="tel" name="phone" id="phone">
+                    </div>
+                </div>
+            </div>
+            <div class="shippingAddress">
+                <h4>Shipping Address</h4>
+                <div class="contactAddress">
+                    <label for="fullName">Full Name</label>
+                    <div class="inputField">
+
+                        <i class="fas fa-user"></i>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                </div>
+                <div class="contactAddress">
+                    <label for="address">Address</label>
+                    <div class="inputField">
+
+                        <i class="fas fa-home"></i>
+                        <input type="text" name="address" id="address">
+                    </div>
+                </div>
+                <div class="contactAddress">
+                    <label for="city">City</label>
+                    <div class="inputField">
+
+                        <i class="fas fa-city"></i>
+                        <input type="text" name="city" id="city">
+                    </div>
+                </div>
+                <div class="inline">
+
+                    <div class="contactAddress country">
+                        <label for="country">Country</label>
+                        <div class="inputField">
+
+
+                            <select name="country" id="country">
+                                <option value="Turkey">Turkey</option>
+                                <option value="Deutschland">Deutschland</option>
+                                <option value="USA">USA</option>
+                                <option value="England">England</option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="contactAddress postal ">
+                        <label for="postalCode">Postal Code</label>
+                        <div class="inputField">
+
+                            <i class="fas fa-mail-bulk"></i>
+                            <input type="text" name="postalCode" id="postalCode">
+                        </div>
+                    </div>
+                </div>
+                <div class="contactAddress " id="checkbox">
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <label for="checkbox"> See this information next time</label>
+
+                </div>
+            </div>
+            <div class="button">
+
+                <button id="btnSubmit" type="submit">Weiter</button>
+            </div>
+        </form> -->
+        <div class="productsMain">
+            <div class="productPanel">
+                <div class="products">
+
+                    <div class="product">
+                        <img src="photo2.jpg" alt="">
+                        <div class="productInfo">
+                            <h4>Vintage Bag</h4>
+                            <div class="productPrice">
+                                <p><strong> 25.98 </strong><span class="line-through">34.99</span></p>
+                            </div>
+                            <div class="quantityControl">
+                                <button>
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <p class="productQuantity">
+                                    1
+                                </p>
+                                <button>
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                            <div class="productRemove">
+                                <button class="removeProduct">
+                                    Remove
+                                </button>
+                            </div>
+                            <div class="productLinePrice">25.98</div>
+                        </div>
+
+                    </div>
+                    <div class="product">
+                        <img src="photo1.jpg" alt="">
+                        <div class="productInfo">
+                            <h4>Vintage Bag</h4>
+                            <div class="productPrice">
+                                <p><strong> 45.99 </strong><span class="line-through">34.99</span></p>
+                            </div>
+                            <div class="quantityControl">
+                                <button>
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <p class="productQuantity">
+                                    1
+                                </p>
+                                <button>
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                            <div class="productRemove">
+                                <button class="removeProduct">
+                                    Remove
+                                </button>
+                            </div>
+                            <div class="productLinePrice">45.99</div>
+                        </div>
+
+                    </div>
+                    <div class="product">
+                        <img src="photo3.jpg" alt="">
+                        <div class="productInfo">
+                            <h4>Vintage Bag</h4>
+                            <div class="productPrice">
+                                <p><strong> 74.99 </strong><span class="line-through">34.99</span></p>
+                            </div>
+                            <div class="quantityControl">
+                                <button>
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <p class="productQuantity">
+                                    1
+                                </p>
+                                <button>
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                            <div class="productRemove">
+                                <button class="removeProduct">
+                                    Remove
+                                </button>
+                            </div>
+                            <div class="productLinePrice">74.99</div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="buyDetail" id="subTotal">
+                    <p>Subtotal</p>
+                    <p>149.96</p>
+                </div>
+                <div class="buyDetail" id="tax">
+                    <p>Tax(%18)</p>
+                    <p>26.45</p>
+                </div>
+                <div class="buyDetail" id="shipping">
+                    <p>Shipping</p>
+                    <p>15.00</p>
+                </div>
+                <div class="buyDetail" id="overallTotal">
+                    <p>Total</p>
+                    <p>188.41</p>
+                </div>
+            </div>
+        </div>
+        <div class="recyle"></div>
+    </main>
+    <script src="app.js"></script>
+    
+</body>
+
+</html

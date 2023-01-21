@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+main {
+    display: flex;
+    /* justify-content: space-between; */
+    width: 95%;
+    margin: auto;
+    margin-top: 1rem;
+
+}
+
+form {
+
+    width: 60%;
+
+    /* padding: 1rem; */
+    font-size: .6rem;
+    color: #4f4f4f;
+}
+
+.contactAddress {
+    width: 100%;
+    padding-top: .4rem;
+}
+
+.inputField {
+    width: 90%;
+    padding: .2rem;
+    margin-top: .2rem;
+    border: 1px solid black;
+    border-radius: .3rem;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+.shippingAddress {
+    margin-top: .5rem;
+}
+
+.inline {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.country {
+    width: 35%;
+}
+
+.postal {
+    width: 60%;
+}
+
+select {
+    border: none;
+    font-size: .6rem;
+    width: 100%;
+}
+
+#checkbox {
+    display: flex;
+    margin-left: .3rem;
+
+
+}
+
+#checkbox~label {
+    margin-left: .3rem;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+
+    width: 90%;
+
+}
+
+form button {
+    width: 18%;
+    padding: .6rem 0;
+    border-radius: .5rem;
+    background-color: #f2994a;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    font-size: .6rem;
+
+}
+
+form button:hover {
+    background-color: #eb730a;
+    cursor: pointer;
+}
+
+form button:active {
+    background-color: #eb730a;
+    box-shadow: 2px 2px 1px #000e0d;
+    transform: translateY(1px);
+}
+
+.productsMain {
+    width: 40%;
+
+}
+
+.productPanel {
+    width: 95%;
+    border-radius: 10px;
+    margin: 0 1rem;
+    background-color: #eeeeee;
+}
+
+.productPanel .product {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.product img {
+    width: 35%;
+    padding: .4rem 0 0 .4rem;
+    border-radius: .8rem;
+
+
+
+}
+
+.productInfo {
+    width: 100%;
+    font-family: Mon,
+        Arial,
+        Helvetica,
+        sans-serif;
+    padding-top: .4rem;
+
+}
+
+.productInfo h4 {
+    color: #4e5150;
+    text-align: center;
+    font-size: .7rem;
+    padding-bottom: .2rem;
+}
+
+.productInfo p {
+    font-size: .5rem;
+    color: #4e5150;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.productInfo p strong {
+    color: #f2994a;
+    font-size: .6rem;
+    font-weight: 600;
+
+}
+
+.line-through {
+    text-decoration: line-through;
+    margin-left: .2rem;
+}
+
+.quantityControl {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: auto;
+    border: 1px solid rgb(136, 136, 136);
+    margin-top: .6rem;
+    border-radius: .3rem;
+}
+
+.quantityControl p {
+    line-height: 2rem;
+}
+
+.quantityControl button {
+    margin: .3rem 0;
+    background-color: #e0e0e0;
+    border: none;
+    padding: .2rem;
+    border-radius: .2rem;
+    text-align: center;
+
+}
+
+.quantityControl button i {
+    font-size: .7rem;
+    padding: 0 .2rem;
+    cursor: pointer;
+
+}
+
+.productRemove {
+    display: flex;
+    justify-content: center;
+}
+
+.removeProduct {
+    border: none;
+    background-color: rgb(226, 29, 29);
+    color: #fff;
+    font-family: "HelveticaNeue-Medium",
+        "Helvetica Neue Medium";
+
+    padding: .2rem;
+    font-size: .9rem;
+    border-radius: .2rem;
+    margin-top: .3rem;
+}
+
+.removeProduct:hover {
+    background-color: #a44;
+}
+
+.productPrice strong::before {
+    content: '$';
+}
+
+.line-through::before {
+    content: '$';
+}
+
+.productLinePrice {
+    display: flex;
+    justify-content: center;
+    margin-top: .3rem;
+    font-size: .7rem;
+
+}
+
+.productLinePrice::before {
+    content: 'Product Total: $';
+}
+
+.buyDetail {
+
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #bdbdbd;
+    margin: .4rem .2rem;
+    font-size: .7rem;
+
+}
+
+@media(max-width:520px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        margin-top: 1rem;
+
+    }
+
+    form {
+
+        width: 80%;
+
+        /* padding: 1rem; */
+        font-size: .6rem;
+        color: #4f4f4f;
+        margin: auto;
+        margin-bottom: 5%;
+    }
+
+    .productsMain {
+        width: 60%;
+        margin: auto;
+
+    }
+}
+
+@media(max-width:400px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        margin-top: 1rem;
+
+    }
+
+    form {
+
+        width: 90%;
+
+        /* padding: 1rem; */
+        font-size: .6rem;
+        color: #4f4f4f;
+        margin: auto;
+        margin-bottom: 5%;
+
+    }
+
+    .inputField {
+        width: 100%;
+        padding: .2rem;
+        margin-top: .2rem;
+        border: 1px solid black;
+        border-radius: .3rem;
+    }
+
+    .inline {
+
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .productsMain {
+        width: 90%;
+        margin: auto;
+
+    }
+
+    .country {
+        width: 25%;
+    }
+
+    .postal {
+        width: 70%;
+    }
+
+}
